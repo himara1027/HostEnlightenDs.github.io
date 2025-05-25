@@ -1,0 +1,188 @@
+/* About Section */
+.about-section {
+  padding: 80px 0;
+  background-color: var(--background-light);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.section-title {
+  font-size: 2.5rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+}
+.section-divider {
+  height: 4px;
+  width: 80px;
+  background-color: var(--yellow);
+  margin: 0 auto;
+}
+.team-category {
+  color: var(--dark-blue);
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+/* Supervisors Grid - 3 cards in a row */
+.supervisors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 60px;
+}
+/* Students Grid - 4 cards in a row */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 60px;
+}
+.team-member {
+  background-color: var(--background-white);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center; /* Center the content for better alignment with circular photos */
+}
+.team-member:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.supervisor-card {
+  border-top: 4px solid var(--dark-blue);
+}
+.student-card {
+  border-top: 4px solid var(--yellow);
+}
+.team-member-image {
+  position: relative;
+  width: 150px; /* Fixed width for the circular container */
+  height: 150px; /* Fixed height for the circular container */
+  overflow: hidden;
+  border-radius: 50%; /* This makes the container circular */
+  margin: 20px auto; /* Center the circular image and add some margin */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow to the circular photo */
+}
+.member-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.team-member:hover .member-photo {
+  transform: scale(1.05);
+}
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(10, 36, 99, 0.1);
+  transition: background-color 0.3s ease;
+  border-radius: 50%; /* Match the container's border-radius */
+}
+.team-member:hover .image-overlay {
+  background-color: rgba(10, 36, 99, 0.2);
+}
+.member-name {
+  padding: 15px 15px 5px;
+  color: var(--dark-blue);
+  font-size: 1.2rem;
+  margin: 0;
+}
+.member-role {
+  padding: 0 15px;
+  color: var(--yellow);
+  font-weight: bold;
+  margin: 0 0 10px;
+}
+.member-bio {
+  padding: 0 15px 15px;
+  color: var(--text-dark);
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+.member-links {
+  display: flex;
+  justify-content: center; /* Center the social links */
+  padding: 10px 15px 15px;
+}
+.member-link-button {
+  background-color: var(--background-white);
+  color: var(--dark-blue);
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5px; /* Even spacing on both sides */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.member-link-button:hover {
+  background-color: var(--dark-blue);
+  color: var(--yellow);
+}
+.mission-section {
+  background-color: var(--dark-blue);
+  padding: 50px 30px;
+  border-radius: 10px;
+  color: var(--background-white);
+  box-shadow: var(--box-shadow);
+}
+.mission-title {
+  color: var(--yellow);
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.mission-text {
+  line-height: 1.6;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .supervisors-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .supervisors-grid,
+  .students-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-member-image {
+    width: 130px; /* Slightly smaller on medium screens */
+    height: 130px;
+  }
+}
+@media (max-width: 576px) {
+  .supervisors-grid,
+  .students-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-member-image {
+    width: 120px; /* Even smaller on mobile */
+    height: 120px;
+  }
+}
