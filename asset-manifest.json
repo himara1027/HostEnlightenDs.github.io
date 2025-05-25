@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/himara1027/HostEnlightenDs.github.io.git/static/css/main.0dfb4feb.css",
+    "main.js": "/himara1027/HostEnlightenDs.github.io.git/static/js/main.527cc894.js",
+    "index.html": "/himara1027/HostEnlightenDs.github.io.git/index.html",
+    "main.0dfb4feb.css.map": "/himara1027/HostEnlightenDs.github.io.git/static/css/main.0dfb4feb.css.map",
+    "main.527cc894.js.map": "/himara1027/HostEnlightenDs.github.io.git/static/js/main.527cc894.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0dfb4feb.css",
+    "static/js/main.527cc894.js"
+  ]
+}
